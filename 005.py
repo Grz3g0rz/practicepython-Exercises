@@ -25,8 +25,9 @@ for x in range (0, 15, 1):
     secondList.append(num)
 
 for x in range (0, len(secondList), 1):
-    if (secondList[x] not in firstList) and (secondList[x] not in overlap):
+    if (secondList[x] in firstList) and (secondList[x] not in overlap):
         overlap.append(secondList[x])
+
 
 print(firstList)
 print(secondList)
