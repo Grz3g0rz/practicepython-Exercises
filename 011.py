@@ -4,6 +4,15 @@ Ask the user for a number and determine whether the number is prime or not.
 def userNumber(info_text):
     return int(input(info_text))
 
-number = userNumber("Give number: ")
+def printInfo(x):
+    if x==2:
+        return(print("Primality"))
+    else:
+        return(print("Complex"))
 
-dividors = []
+number = userNumber("Give number: ")
+dividors = [a for a in range(1, number+1) if number%a==0 or number/a==1]
+print("Dividors of", number, dividors)
+x = len(dividors)
+
+printInfo(x)
