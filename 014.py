@@ -13,10 +13,10 @@ def listCreator():
     for x in range (0, 10, 1):
         x = random.randint(1, 10)
         numberList.append(x)
-    return numberList
+    print(numberList)
 
 def setCreator():
     noDuplicates = set(numberList)
-    return noDuplicates
+    print(noDuplicates)
 listCreator()
 setCreator()
