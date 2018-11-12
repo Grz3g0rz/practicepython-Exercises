@@ -6,6 +6,7 @@ import random
 #0 = rock
 #1 = paper
 #2 = scisors
+playerChose = ""
 
 while playerChose != "q":
     playerChose = input("(r)ock, (p)aper, (s)cisors, (q)uit: ")
